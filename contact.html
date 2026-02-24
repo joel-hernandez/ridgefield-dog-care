@@ -3,48 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Contact | Ridgefield Reliable Dog Care</title>
-
 <meta name="description" content="Contact Ridgefield Reliable Dog Care for dog sitting and walking in Ridgefield NJ. Schedule your meet and greet today.">
-
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-<div class="container nav-flex">
-<div class="logo">Ridgefield Reliable Dog Care</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html" class="cta-nav">Book Now</a>
-</nav>
-</div>
+  <div class="container nav-flex">
+    <div class="logo">Ridgefield Reliable Dog Care</div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta-nav">Book Now</a>
+    </nav>
+  </div>
 </header>
 
-<section class="container page-section">
-<h1>Contact</h1>
-
-<p>Call or Text: [Your Phone]</p>
-<p>Email: [Your Email]</p>
-<p>Instagram: [Your Handle]</p>
-
-<h2>Request a Meet & Greet</h2>
-
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Tell me about your dog"></textarea>
-<button type="submit">Send Message</button>
-</form>
-
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>Ready to book or have questions? I'd love to hear from you.</p>
+  </div>
 </section>
 
+<!-- CONTACT GRID -->
+<div class="container">
+  <div class="contact-grid">
+
+    <!-- LEFT: Contact Info -->
+    <div class="contact-info">
+      <h2>Let's Connect</h2>
+      <p>Reach out any time — I'm happy to answer questions or set up a meet &amp; greet for you and your pup.</p>
+
+      <div class="contact-methods">
+        <a href="tel:+12014968769" class="contact-method">
+          <div class="cm-icon">&#128222;</div>
+          <div class="cm-text">
+            <span class="cm-label">Call or Text</span>
+            <span class="cm-value">(201) 496-8769</span>
+          </div>
+        </a>
+
+        <a href="mailto:elisbrasil2017@hotmail.com" class="contact-method">
+          <div class="cm-icon">&#9993;</div>
+          <div class="cm-text">
+            <span class="cm-label">Email</span>
+            <span class="cm-value">elisbrasil2017@hotmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/ridgefielddogcare" target="_blank" rel="noopener" class="contact-method">
+          <div class="cm-icon">&#128247;</div>
+          <div class="cm-text">
+            <span class="cm-label">Instagram</span>
+            <span class="cm-value">@ridgefielddogcare</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form-card">
+      <h2>Request a Meet &amp; Greet</h2>
+      <p>Tell me about your dog and I'll get back to you within 24 hours.</p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_next" value="thanks.html">
+        <input type="hidden" name="_subject" value="New Meet & Greet Request — Ridgefield Dog Care">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Sarah Johnson" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="e.g. sarah@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. (201) 555-1234">
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Me About Your Dog</label>
+          <textarea id="message" name="message" placeholder="Breed, age, any special needs, and what services you're interested in..."></textarea>
+        </div>
+        <button type="submit">Send Message &#8594;</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Ridgefield Reliable Dog Care | Ridgefield, NJ</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Ridgefield Reliable Dog Care</div>
+        <p>Professional, loving dog care in Ridgefield, NJ and throughout Bergen County.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Dog Sitting</a>
+        <a href="services.html">Dog Walking</a>
+        <a href="services.html">Pet Transportation</a>
+        <a href="services.html">Multi-Dog Boarding</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ridgefield Reliable Dog Care | Ridgefield, NJ</span>
+    </div>
+  </div>
 </footer>
 
 </body>
