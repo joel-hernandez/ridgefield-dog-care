@@ -3,52 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Dog Sitting Services in Ridgefield NJ | Ridgefield Reliable Dog Care</title>
-
 <meta name="description" content="Affordable dog sitting, dog walking, and pet transportation in Ridgefield NJ. $20 hourly, $60 daily, 15% weekly discount. Serving Bergen County.">
-
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-<div class="container nav-flex">
-<div class="logo">Ridgefield Reliable Dog Care</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html" class="cta-nav">Book Now</a>
-</nav>
-</div>
+  <div class="container nav-flex">
+    <div class="logo">Ridgefield Reliable Dog Care</div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta-nav">Book Now</a>
+    </nav>
+  </div>
 </header>
 
-<section class="container page-section">
-<h1>Services & Pricing</h1>
-
-<h2>Dog Sitting</h2>
-<p>$20 per hour</p>
-<p>$60 per day</p>
-<p>15% weekly discount</p>
-<p>Available in your home or mine.</p>
-
-<h2>Dog Walking</h2>
-<p>$30 per walk</p>
-
-<h2>Pet Transportation</h2>
-<p>Vet visits, grooming, and travel assistance.</p>
-<p>Pricing based on distance.</p>
-
-<h2>Multi-Dog Boarding</h2>
-<p>Boarding available for compatible dogs.</p>
-<p>Vaccination proof required.</p>
-
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Services &amp; Pricing</h1>
+    <p>Transparent pricing, flexible options, and care tailored to your dog.</p>
+  </div>
 </section>
 
+<!-- SERVICES GRID -->
+<div class="container">
+  <div class="services-grid">
+
+    <div class="service-card fade-in fade-in-delay-1">
+      <div class="service-icon">&#127968;</div>
+      <h3>Dog Sitting</h3>
+      <p>In-home or at my place — your dog gets one-on-one attention, regular walks, feeding on schedule, and plenty of love.</p>
+      <div class="price-tag">$20 / hour</div>
+      <div class="price-detail">$60 / full day</div>
+      <div class="discount-badge">&#127775; 15% weekly discount</div>
+    </div>
+
+    <div class="service-card fade-in fade-in-delay-2">
+      <div class="service-icon">&#128694;</div>
+      <h3>Dog Walking</h3>
+      <p>Structured walks with attention to your dog's pace and comfort. Perfect for midday energy breaks or routine exercise.</p>
+      <div class="price-tag">$30 / walk</div>
+    </div>
+
+    <div class="service-card fade-in fade-in-delay-3">
+      <div class="service-icon">&#128663;</div>
+      <h3>Pet Transportation</h3>
+      <p>Safe rides to the vet, groomer, or anywhere your dog needs to be. Calm handling and a secure vehicle setup.</p>
+      <div class="price-tag">Based on distance</div>
+      <div class="price-detail">Vet visits, grooming &amp; travel</div>
+    </div>
+
+    <div class="service-card fade-in fade-in-delay-1">
+      <div class="service-icon">&#128054;</div>
+      <h3>Multi-Dog Boarding</h3>
+      <p>Boarding available for compatible dogs. Each dog is assessed for temperament fit so everyone stays happy and safe.</p>
+      <div class="price-tag">Contact for pricing</div>
+      <div class="price-detail">Vaccination proof required</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Not Sure Which Service Fits?</h2>
+    <p>Let's chat! A quick meet &amp; greet helps us figure out exactly what your dog needs.</p>
+    <a href="contact.html" class="btn-primary">Schedule a Meet &amp; Greet &#8594;</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Ridgefield Reliable Dog Care | Ridgefield, NJ</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Ridgefield Reliable Dog Care</div>
+        <p>Professional, loving dog care in Ridgefield, NJ and throughout Bergen County.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Dog Sitting</a>
+        <a href="services.html">Dog Walking</a>
+        <a href="services.html">Pet Transportation</a>
+        <a href="services.html">Multi-Dog Boarding</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ridgefield Reliable Dog Care | Ridgefield, NJ</span>
+    </div>
+  </div>
 </footer>
 
 </body>
