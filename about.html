@@ -3,43 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>About | Ridgefield Reliable Dog Care</title>
-
 <meta name="description" content="Local Ridgefield NJ dog sitter Elisa providing safe, structured care throughout Bergen County. Experienced handling dogs of all sizes.">
-
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-<div class="container nav-flex">
-<div class="logo">Ridgefield Reliable Dog Care</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html" class="cta-nav">Book Now</a>
-</nav>
-</div>
+  <div class="container nav-flex">
+    <div class="logo">Ridgefield Reliable Dog Care</div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta-nav">Book Now</a>
+    </nav>
+  </div>
 </header>
 
-<section class="container page-section">
-<h1>About Elisa</h1>
+<!-- ABOUT SECTION -->
+<div class="container">
+  <div class="about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Happy golden retriever — Ridgefield Reliable Dog Care">
+    </div>
+    <div class="about-content">
+      <span class="about-subtitle">Nice to meet you!</span>
+      <h1>About Elisa</h1>
+      <p>Hi, I'm Elisa — a Ridgefield resident providing reliable, attentive dog care throughout Bergen County.</p>
+      <p>I've worked with dogs of all breeds, sizes, and temperaments. Whether your dog is a shy senior or an energetic puppy, I focus on calm, structured, and genuinely caring attention tailored to their personality.</p>
+      <p>Every new client begins with a meet &amp; greet to make sure it's a great fit. I prioritize safety, clear communication, and consistency — and you'll always receive regular updates and photos while your dog is with me.</p>
 
-<p>Hi, I’m Elisa, a Ridgefield resident providing reliable dog care throughout Bergen County.</p>
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <div class="h-icon">&#128150;</div>
+          All breeds welcome
+        </div>
+        <div class="highlight-item">
+          <div class="h-icon">&#128247;</div>
+          Photo updates
+        </div>
+        <div class="highlight-item">
+          <div class="h-icon">&#128101;</div>
+          References available
+        </div>
+        <div class="highlight-item">
+          <div class="h-icon">&#128205;</div>
+          Ridgefield local
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>I’ve worked with dogs of different breeds, sizes, and temperaments, and I focus on calm, structured, and attentive care.</p>
-
-<p>Every new client begins with a meet & greet to ensure a good fit. I prioritize safety, communication, and consistency. You can expect regular updates and photos while your dog is in my care.</p>
-
-<p>References available upon request.</p>
-
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Let's Meet!</h2>
+    <p>I'd love to get to know you and your dog. The first meet &amp; greet is always free.</p>
+    <a href="contact.html" class="btn-primary">Schedule a Meet &amp; Greet &#8594;</a>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Ridgefield Reliable Dog Care | Ridgefield, NJ</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Ridgefield Reliable Dog Care</div>
+        <p>Professional, loving dog care in Ridgefield, NJ and throughout Bergen County.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Dog Sitting</a>
+        <a href="services.html">Dog Walking</a>
+        <a href="services.html">Pet Transportation</a>
+        <a href="services.html">Multi-Dog Boarding</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ridgefield Reliable Dog Care | Ridgefield, NJ</span>
+    </div>
+  </div>
 </footer>
 
 </body>
